@@ -1,0 +1,25 @@
+<style>
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+<body>
+    <h1 style="text-align: center;"><strong>Covid-19 country wise Data</strong></h1>
+
+    {{#each info as |val key| }}
+<div>
+<img class="center" src="{{val.countryInfo.flag}}" alt="">
+<h2 style="text-align: center;">{{val.country}}</h2>
+<h3 style="text-align: center;">Total cases:{{val.cases}}</h3>
+<h3 style="text-align: center;">Total Deaths:{{val.deaths}}</h3>
+
+</d>
+
+{{/each}}
+    
+</body>
+
+
