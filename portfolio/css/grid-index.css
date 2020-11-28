@@ -1,0 +1,1042 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #0a192f;
+}
+
+
+
+#content-container{
+  height:100vh;
+  width: 100%;
+}
+
+#content-indexing{
+  font-size: 30px;
+  color: #57dec1;
+  font-family: Advent Pro;
+}
+
+#content-heading{
+  font-size: 30px;
+  color: #ccd6f6;
+  font-weight: bolder;
+  padding-left: 10px;
+}
+
+/*container grid layout*/
+.container{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  grid-template-areas:
+  "nav nav nav nav nav nav nav"
+  "left middle middle middle middle middle right"
+  "left middle middle middle middle middle right"
+  "left middle middle middle middle middle right"
+  "footer footer footer footer footer footer footer";
+
+}
+
+nav{
+  grid-area: nav;
+}
+
+#left{
+  grid-area: left;
+  padding: 0;
+  margin: 0;
+}
+
+#middle{
+  grid-area: middle;
+}
+
+#right{
+  grid-area: right;
+}
+
+footer{
+  grid-area: footer;
+}
+
+/*end of grid layout*/
+
+/*Navigation*/
+
+nav{
+  height: 80px;
+  width: 100%;
+  text-decoration-style: none;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+a.active,a:hover{
+  color: #57dec1;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+
+#nav-indexing{
+    color: #57dec1;
+    font-family: Advent Pro;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+#nav-resume-btn{
+    border-style: solid;
+    border-color: #57dec1;
+    border-width: 1px;
+    padding: 8px 20px;
+    border-radius: 5px;
+
+}
+
+#logo{
+  height: 70px;
+  width: 70px;
+  padding-left: 20px;
+}
+
+
+/* end of navigation*/
+
+/* Introduction */
+
+.intro{
+  width: 100%;
+  padding-left: 10%;
+  padding-top: 10%;
+}
+h1{
+  font-size: 80px;
+  line-height: 50%;
+  color: #ccd6f6;
+}
+
+h2{
+  font-size: 60px;
+  color: #8892b0;
+}
+
+h5{
+  font-size: 20px;
+  padding-bottom: 20px;
+  color: #76809d;
+
+}
+
+#myname{
+  color: #57dec1;
+  font-family: Advent Pro;
+  letter-spacing: 2px;
+}
+
+.intro-getintouch-btn{
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  padding: 20px 40px;
+  text-decoration:none;
+  border-color: #57dec1;
+  color: #57dec1;
+  margin-top: 50px;
+  font-family: Advent Pro;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.intro a:hover {
+  cursor: pointer;
+  background-color:#57dec1;
+  color:#0a192f;
+  transition: 1s;
+}
+
+/* End od Introduction*/
+
+/* About*/
+.about{
+  
+  width: 100%;
+  padding-left: 10%;
+  padding-top: 10%;
+}
+.index{
+  margin:30px 10px;
+}
+.index p{
+    display: inline;
+    font-size: 18px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+  }
+
+#tech{
+  color: white;
+
+}
+
+.tech-stack{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.tech-stack ul{
+    float: left;
+  }
+
+ul li{
+    display: inline-block;
+    padding: 0px 12px;
+    line-height: 0%;
+}
+
+.tech-stack h4{
+  padding: 1px 5px;
+  margin: 0;
+  color: #57dec1;
+}
+
+#html-logo{
+  color: #57dec1;
+}
+
+
+  
+
+  
+
+/* End of About*/
+
+/* Qualification*/
+.qualification{
+  
+  width: 100%;
+  padding-top: 10%;
+}
+  
+
+ /* Style the tab */
+#tab-container{
+  padding-left: 15%;
+}
+
+ .tab {
+  float: left;
+  border-left: 1px solid #ccc;
+  height: 200px;
+  margin-top: 10px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: transparent;
+  color: #8892b0;
+  padding: 15px 15px;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 1s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: #57dec1;
+    transition: 0.3s;
+
+  }
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #0a192f;
+  color: #57dec1;
+  border-left: #57dec1;
+  border-left-style: solid;
+  
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding-left: 30px;
+  padding-right: 50px;
+  height: 200px;
+  color: #7c7c7c;
+
+} 
+
+
+.tabcontent h3{
+  color: #57dec1;
+}
+.tabcontent #year{
+  color: #ccc;
+  font-family: Advent Pro;
+  line-height: 1%;
+}
+
+/*End of qualification*/
+
+/* Projects*/
+#projects-div{
+  margin-right: 0%;
+}
+
+.projects{
+  padding: 0;
+  margin: 0;
+}
+
+.project-rows{
+  width: 100%;
+}
+
+
+.col-one, .col-two, .col-three, .col-four {
+  width: 45%;
+  float: left;
+  background-color: #172a45;
+  border-style: none;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 1% 1%;
+  height: 35vh;
+}
+
+.col-one h3, .col-two h3,.col-three h3,.col-four h3{
+  color: #ccc;
+  font-weight: 700;
+}
+
+.col-one h6,.col-two h6,.col-three h6,.col-four h6{
+  color: #7c7c7c;
+  text-align: justify;
+  font-size: 14px;
+}
+
+.used-tech p{
+  display: inline;
+  padding: 0px 10px;
+  font-size: 12px;
+  font-weight: bolder;
+  font-family: Advent Pro;
+  color: #7c7c7c;
+  float: left;
+}
+.folder #external-link{
+  float: right;
+  padding: 5px;
+}
+
+
+
+  /* Contact*/
+  .contact{
+    text-align: center;
+    padding-right: 20%;
+  }
+  
+    .contact-btn{
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 3px;
+      padding: 20px 40px;
+      text-decoration:none;
+      border-color: #57dec1;
+      color: #57dec1;
+      margin-top: 50px;
+      font-family: Advent Pro;
+      letter-spacing: 2px;
+      font-weight: bold;
+  }
+  
+  .contact a:hover {
+      cursor: pointer;
+      background-color:#57dec1;
+      color:#0a192f;
+      transition: 1s;
+      
+    }
+  
+    /*footer*/
+  
+    .footer-icon{
+      color: #57dec1;
+      font-size: 24px;
+      font-family: Advent Pro;
+    }
+
+    #copyright{
+      text-align: center;
+      font-size: 16px;
+      font-family: Advent Pro;
+    }
+
+  .footer-icon p{
+    text-align: center;  
+    padding: 0px 10px;
+    }
+
+
+  
+    
+
+  
+
+
+/*Media query*/
+
+
+
+/* for tabs */
+@media screen and (max-width: 768px) {
+  
+  
+  #content-container{
+    width: 80%;
+    height: 70vh;
+    margin: 0;
+  }
+
+  .container{
+    overflow: hidden;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "nav"
+    "middle"
+    "footer";
+  }
+
+  /*Navigation*/
+
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #0a192f;
+    margin: 0%;
+    padding: 0%;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    text-decoration-style: none;
+  }
+  #check:checked ~ ul{
+    left: 0;
+    text-align: center;
+  }
+
+  
+  
+
+
+  /*Intro*/
+
+  .intro{
+    width: 100%;
+    padding-left: 10%;
+    margin: 0;
+    text-align: left;
+  }
+
+  /*About*/
+  .about{
+    width: 100%;
+  }
+   
+
+  /*for tab-qualification*/
+  .qualification{
+    width: 100%;
+  }
+  #tab-container{
+    padding-left: 0;
+  }
+
+  .tab {
+    border-left: none;
+    border-bottom: 1px solid #ccc;
+    height: 45px;
+    width: 100wh;
+    align-self: center;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+.tab button{
+  display: inline-block;
+  width: max-content;
+}
+
+.tab button.active{
+  border-left: none;
+  border-bottom: #57dec1;
+  border-bottom-style: solid ;
+  height: 45px;
+}
+
+.tabcontent{
+  width: 100%;
+  padding:10px;
+  margin-left: 10%;
+  margin-right: 15%;
+  height: 100px;
+}
+
+.tabcontent h3{
+  font-size: 30px;
+}
+
+
+  /*Projects*/
+  .projects{
+    width: 100%;
+  }
+
+  .col-one, .col-two, .col-three, .col-four {
+    width: 45%;
+    float: left;
+    background-color: #172a45;
+    border-style: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 1% 1%;
+    height: 35vh;
+  }
+  
+  .col-one h3, .col-two h3,.col-three h3,.col-four h3{
+    color: #ccc;
+    font-weight: 700;
+  }
+  
+  .col-one h6,.col-two h6,.col-three h6,.col-four h6{
+    color: #7c7c7c;
+    text-align: justify;
+    font-size: 14px;
+  }
+  
+  .used-tech p{
+    display: inline;
+    padding: 0px 10px;
+    font-size: 12px;
+    font-weight: bolder;
+    font-family: Advent Pro;
+    color: #7c7c7c;
+    float: left;
+  }
+  
+
+  /* End of Projects*/
+
+
+ 
+
+  
+  /*contact*/
+  #contact-div{
+    height: 70vh;
+  }
+
+
+
+  .getintouch{
+    text-align: center;
+    padding-top: 10%;
+    padding-left: 25%;
+  }
+
+  .getintouch h1{
+    font-size: 60px;
+  }
+  
+}
+
+@media screen and (max-width: 540px) {
+  .col{
+    width: 100%;
+  }
+  
+  #content-container{
+    width: 100wh;
+    height: 70vh;
+    margin: 0;
+    padding:0;
+
+  }
+  .container{
+    overflow: hidden;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "nav"
+    "middle"
+    "footer";
+  }
+
+  /*Intro*/
+
+  .intro{
+    width: 100%;
+    padding-left: 10%;
+    margin: 0;
+    text-align: left;
+  }
+
+  h1{
+    font-size: 40px;
+  }
+  h2{
+    font-size: 35px;
+  }
+
+
+  h5{
+    font-size: 18px;
+  }
+
+  /*qualification*/
+  .tab {
+    border-left: none;
+    border-bottom: 1px solid #ccc;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 15%;
+  }
+.tab button{
+  display: inline-block;
+}
+
+.tab button.active{
+  border-left: none;
+  border-bottom: #57dec1;
+  border-bottom-style: solid ;
+  height: 45px;
+}
+
+.tabcontent{
+  margin: 0%;
+  padding-left: 20px;
+  padding-right: 20px;
+  height:150px;
+}
+
+.tabcontent h3{
+  font-size: 30px;
+}
+
+/*Projects*/
+
+.project-rows{
+  width: 100%;
+}
+.col-one, .col-two, .col-three, .col-four {
+  width: 90%;
+  float: left;
+  background-color: #172a45;
+  border-style: none;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 2% 2%;
+}
+
+.col-one h3, .col-two h3,.col-three h3,.col-four h3{
+  color: #ccc;
+  font-weight: 700;
+}
+
+.col-four{
+  margin-bottom: 20%;
+}
+
+.col-one h6,.col-two h6,.col-three h6,.col-four h6{
+  color: #7c7c7c;
+  text-align: justify;
+  font-size: 14px;
+}
+
+.used-tech p{
+  display: inline;
+  padding: 0px 10px;
+  font-size: 12px;
+  font-weight: bolder;
+  font-family: Advent Pro;
+  color: #7c7c7c;
+  float: left;
+}
+
+ /* End of Projects*/
+
+  
+  /*contact*/
+  #contact-div{
+    height: 70vh;
+    margin:  10% 0;
+    padding-bottom: 20%;
+  }
+
+
+
+  .getintouch{
+    text-align: center;
+    padding-left: 0%;
+  }
+
+  .getintouch h1{
+    font-size: 25px;
+    padding: 1%;
+  }
+
+  .getintouch h5{
+    font-size: 16px;
+  }
+
+  .contact-btn{
+    padding: 10px 20px;
+  }
+
+   /* Footer*/
+  svg{
+    height: 20px;
+    width: 20px;
+    padding: 0px 10px;
+    }
+
+  .footer-icon P{
+    padding-top: 20%;
+    padding-bottom: 0%;
+  }
+    
+    
+  
+}
+
+
+
+
+/* For mobile phones*/
+@media screen and (max-width: 480px) {
+  .container{
+    overflow: hidden;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "nav"
+    "middle"
+    "footer";
+  }
+
+
+  #content-indexing,#content-heading{
+    font-size: 20px;
+  }
+
+    /*Intro*/
+
+    .intro{
+      width: 100%;
+      padding-left: 10%;
+      margin: 0;
+      text-align: left;
+    }
+
+    .intro h1{
+      font-size: 36px;
+    }
+    h2{
+      font-size: 20px;
+    }
+
+    h5{
+      font-size: 16px;
+    }
+
+    #myname{
+      padding-bottom: 0;
+      font-size: 16px;
+    }
+
+    .intro-getintouch-btn{
+      padding:10px 20px;
+    }
+
+    /*about*/
+
+
+      /*qualification*/
+  .tab {
+    overflow: auto;
+    white-space: nowrap;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
+    height: 45px;
+    width: 100wh;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 15%;
+  }
+.tab button{
+  display: inline-block;
+}
+
+.tab button.active{
+  border-left: none;
+  border-bottom: #57dec1;
+  border-bottom-style: solid ;
+  height: 45px;
+}
+
+.tabcontent{
+  margin: 0%;
+  padding-left: 20px;
+  padding-right: 20px;
+  height:150px;
+}
+
+.tabcontent h3{
+  font-size: 25px;
+}
+
+.col-one h6,.col-two h6,.col-three h6,.col-four h6{
+  color: #7c7c7c;
+  text-align: justify;
+  font-size: 14px;
+}
+
+.used-tech p{
+  display: inline;
+  padding: 0px 10px;
+  font-size: 12px;
+  font-weight: bolder;
+  font-family: Advent Pro;
+  color: #7c7c7c;
+  float: left;
+}
+
+ /* End of Projects*/
+
+
+
+    /*contact*/
+
+    #contact-div{
+      height: 90vh;
+      margin:  20% 0;
+      padding-bottom: 20%;
+    }
+  
+
+    
+    .contact{
+      padding: 0px 30px;
+    }
+
+  
+
+    
+    .getintouch h1{
+      font-size: 30px;
+    }
+
+
+
+    .getintouch h5{
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 100;
+    }
+
+    .contact-btn{
+      padding:5px 10px;
+    }
+
+    /*End of contact*/
+
+   /* Footer*/
+
+   footer{
+     padding-bottom: 0 50%;
+   }
+
+   .Whats-next{
+    font-size: 16px;
+  }
+
+
+    
+
+
+   
+
+    
+
+  
+}
+
+/* For Galaxy fold*/
+@media screen and (max-width: 280px) {
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "nav"
+    "middle"
+    "footer";
+  }
+
+  #content-indexing,#content-heading{
+    font-size: 18px;
+  }
+
+
+    /*Intro*/
+
+    .intro{
+      width: 100%;
+      padding-left: 10%;
+      margin: 0;
+      text-align: left;
+    }
+
+    h1{
+      font-size: 28px;
+    }
+    h2{
+      font-size: 20px;
+    }
+
+    h5{
+      font-size: 14px;
+    }
+
+    #myname{
+      padding-bottom: 0;
+    }
+
+    .intro-getintouch-btn{
+      padding:10px 20px;
+    }
+
+    /*about*/
+
+     /*qualification*/
+  .tab {
+    overflow: auto;
+    white-space: nowrap;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
+    height: 45px;
+    width: 100wh;
+    text-align: center;
+    margin-left: 2%;
+  }
+.tab button{
+  display: inline-block;
+}
+
+.tab button.active{
+  border-left: none;
+  border-bottom: #57dec1;
+  border-bottom-style: solid ;
+  height: 45px;
+}
+
+.tabcontent{
+  overflow: auto;
+  margin: 0%;
+  height:150px;
+  font-size: 12px;
+}
+
+.tabcontent h3{
+  font-size: 20px;
+}
+
+
+
+
+
+    /*contact*/
+    .contact{
+      padding: 0px 30px;
+    }
+
+    .getintouch h1{
+      font-size: 30px;
+    }
+
+    .getintouch h5{
+      font-size: 12px;
+    }
+
+    .contact-btn{
+      padding:10px 20px;
+    }
+
+
+  
+}
+

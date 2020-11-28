@@ -1,0 +1,10 @@
+
+<div class="contact">
+            <section class="container">
+                <div class="getintouch">
+                    <h5 id="myname">What's Next ?</h5>
+                    <h1>Get In Touch</h1>
+                    <a href="" class="contact-btn">Say Hello</a>
+                </div>
+            </section>
+        </div>
